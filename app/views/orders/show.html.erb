@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<% total = 0 %>
+<p>
+  <strong>Product id1:</strong>
+  <%= @order.product_id %>
+</p>
+<p>
+ 
+  <% product = Product.find_by_id(@order.product_id) %>
+  
+  <strong>Unit Price:</strong>
+  
+  <%= product.rental_price =%>
+
+
+<p>
+  <strong>Total:</strong>
+
+   <%= product.rental_price* @order.days =%>
+
+
+<p>
+  <strong>Start date:</strong>
+  <%= @order.start_date %>
+</p>
+
+<p>
+  <strong>Days:</strong>
+  <%= @order.days %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>
+S
+

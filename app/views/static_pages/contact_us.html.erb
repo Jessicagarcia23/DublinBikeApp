@@ -1,0 +1,60 @@
+<% provide(:title, "Contact Us") %>
+
+
+
+<h1>Contact Us</h1>
+
+<table align="center">
+<div class="itemBody">  											
+	<div class="itemFullText">
+		<h4>Opening Times</h4>
+			<p>Mondays to  Fridays   9am-7pm<br>
+			  Saturday & Sundays    10am-5pm </p>
+		<h4>Contact Details </h4>
+		<p><strong>Address:</strong>  Jessica's bike shop Sandymount Village, Co Dublin </p>
+		<p><strong>Telephone:</strong> 353 01 7882574 </p>
+		
+</table>		
+	
+	
+		<h3 style="text-align: center"> Contact Form</h3>
+		<div class="row">
+  		<div class="col-md-6 col-md-offset-3">
+	<form onsubmit="javascript:alert('Thank you for your Comment');return false;" method="post"  id="userForm" enctype="multipart/form-data" action=""><fieldset class="formFieldset">
+
+<!-- Do not remove this ID, it is used to identify the page so that the pagination script can work correctly -->
+
+  
+	
+		<div class="formCaption">Full Name<strong class="formRequired">: *</strong></div>
+		<div class="formBody"><input type="text" value="" size="25"  name="form[fullname]" id="fullnamename"  class="form-control"/></div>
+		<div class="formDescription"></div>
+
+
+		<div class="formCaption">Email <strong class="formRequired">: *</strong></div>
+		<div class="formBody"><input type="text" value="" size="25"  name="form[Email]" id="Email"  class="form-control"/></div>
+		<div class="formDescription"></div>
+
+	
+		<div class="formCaption">Phone<strong class="formRequired">:</strong></div>
+		<div class="formBody"><input type="text" value="" size="20"  name="form[Phone]" id="Phone"  class="form-control"/></div>
+		<div class="formDescription"></div>
+
+	
+		<div class="formCaption">Message:</div>
+		<div class="formBody" style="margin-top:10px;"><textarea cols="55" rows="8" name="form[message]" id="message"  class="form-control"></textarea></div>
+		<div class="formDescription"></div>
+
+
+		<div class="formCaption"></div>
+		<div class="formBody"><input type="submit" value="Submit"  Full name="form[Submit]" id="Submit" class="btn btn-primary" /><span class="formClr"></span></div>
+		<div class="formDescription"></div>
+	
+
+</fieldset>
+</form>
+</div>
+</div>
+</div>
+</div>
+

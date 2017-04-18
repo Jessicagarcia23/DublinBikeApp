@@ -1,0 +1,27 @@
+<% provide(:title, "Home") %>
+
+<div class="center">
+  
+<%= image_tag("logo.png")%>
+</div>
+  <h2>Getting around Dublin by <strong>Bike</strong> means you don't have to worry about sticking to bus timetables.</br></br>
+      Whether you're just popping down to the shops to pick up some milk, commuting to work or</br></br>
+      cycling to get fit and help the environment.</br></br>
+      <strong>cycling gives you the freedom to be flexible and spontaneous.</strong></h2>
+ 
+
+                  </div></h3>
+                    <center>
+        <h2>
+    <% if customer_signed_in? %>
+    <div> Signed <%= current_customer.email %> (<%= link_to 'Sign out', destroy_customer_session_path, :method => :delete %>)
+    <% else %>
+    If you are new <strong><%= link_to 'Sign Up here', new_customer_registration_path %></strong> or <strong><%= link_to 'Sign in', new_customer_session_path %>
+    <% end %></strong></h2>
+    </center>
+                  
+</div>
+
+
+
+

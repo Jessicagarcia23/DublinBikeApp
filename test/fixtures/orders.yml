@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  bike_id: 1
+  total_price: 9.99
+  email: MyString
+  start_date: 2017-04-11
+  days: 1
+
+two:
+  user_id: 1
+  bike_id: 1
+  total_price: 9.99
+  email: MyString
+  start_date: 2017-04-11
+  days: 1
